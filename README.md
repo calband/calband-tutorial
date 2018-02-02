@@ -55,3 +55,14 @@ Open up the Github repository. You should see a yellow box with your branch. Sma
 [Congratulations!!!](https://youtu.be/1Bix44C1EzY)
 
 Just by completing this tutorial, you've accomplished so much!!! You now have the basic knowledge to contribute to the computer committee! My [--insert your gender identifier--](https://youtu.be/I04OIfbBrTg)!
+
+## Optional tutorials
+
+These outside tutorials are very helpful in understanding other technologies that you will use. Although you can learn these while working on issues, these tutorials will better prepare you. In particular, you should learn about HTML, SCSS, jQuery, and git. You can apply what you learned in those tutorials in your PR!
+
+- [Brandon Chinn's (Computer Coordinator 2016) guide to everything comp comm related](https://github.com/calband/compcomm-info)
+- [Codecademy HTML + CSS](https://www.codecademy.com/en/tracks/web)
+- [Javascript Fundamentals](https://javascript.info/first-steps)
+- [try.jquery.com](http://try.jquery.com/levels/1/challenges/1)
+- [What is Sass?](https://www.creativebloq.com/web-design/what-is-sass-111517618)
+- [try.github.io](https://try.github.io/levels/1/challenges/1)
