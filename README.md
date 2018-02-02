@@ -42,7 +42,7 @@ When you finish, you will make a pull request to show off your progress! In our 
 ```
 git status
 git add .
-git commit -m "Finished tutorial! Cal Band Great! Wow!"
+git commit -m "Finished tutorial! Cal Band Great! Wow"
 git push origin [the name of your branch]
 ```
 
