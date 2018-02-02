@@ -27,6 +27,12 @@ ls
 
 This should print out `README.md`
 
+Next, we'll create a new branch for you to make changes on.
+
+```
+git checkout -b [enter your name here!!! this is the name of your branch]
+```
+
 ## Your Task
 
 You will complete the ["Writing your first Django app" tutorial](https://docs.djangoproject.com/en/2.0/intro/tutorial01/). Do not worry about "Database setup" in part 2. You will use SQLite for simplicity.
@@ -34,7 +40,6 @@ You will complete the ["Writing your first Django app" tutorial](https://docs.dj
 When you finish, you will make a pull request to show off your progress! In our workflow, we use pull requests to help us review changes made before making a changes to our master branch.
 
 ```
-git checkout -b [enter your name here!!! this is the name of your branch]
 git status
 git add .
 git commit -m "Finished tutorial! Cal Band Great! Wow!"
