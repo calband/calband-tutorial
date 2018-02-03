@@ -61,6 +61,7 @@ Just by completing this tutorial, you've accomplished so much!!! You now have th
 These outside tutorials are very helpful in understanding other technologies that you will use. Although you can learn these while working on issues, these tutorials will better prepare you. In particular, you should learn about HTML, SCSS, jQuery, and git. You can apply what you learned in those tutorials in your PR!
 
 - [Brandon Chinn's (Computer Coordinator 2016) guide to everything comp comm related](https://github.com/calband/compcomm-info)
+- [Web Design Decal CSS Cheat Sheet](https://docs.google.com/document/d/1P8W1Fl__4fwui-Sac5UjauTvyj-NLhcgLk_5el82_5A/edit?usp=sharing) You have to use your berkeley account to access this.
 - [Codecademy HTML + CSS](https://www.codecademy.com/en/tracks/web)
 - [Javascript Fundamentals](https://javascript.info/first-steps)
 - [try.jquery.com](http://try.jquery.com/levels/1/challenges/1)
