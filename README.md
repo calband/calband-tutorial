@@ -20,7 +20,7 @@ pip3 install Django
 Open up your terminal and `cd` into a folder that you want to clone this tutorial folder in.
 
 ```
-git clone git@github.com:calband/calband-tutorial.git
+git clone git@github.com:calband/calband-tutorial.git (or use the https link: https://github.com/calband/calband-tutorial.git)
 cd calband-tutorial
 ls
 ```
