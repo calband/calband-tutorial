@@ -17,10 +17,4 @@ Vagrant.configure("2") do |config|
     
     # sync the current directory with the /vagrant directory on the virtual machine
     config.vm.synced_folder ".", "/vagrant", :mount_options => ["fmode=666"]
-
-    # Enable provisioning using Ansible
-    config.vm.provision "ansible_local" do |ansible|
-        ansible.playbook = "vagrant/playbook.yml"
-        ansible.become = true
-    end
 end
