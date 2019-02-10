@@ -8,24 +8,15 @@ It is recommended that CAs and HACK have taken or are taking at least CS61B, so 
 
 In this tutorial, you will learn the basics of how to use Github to collaborate and how to create a [simple Django web application](https://youtu.be/Dma8Cq2i0cc?t=41s).
 
-## Set up
+## Git set up
 
-First, you should [download](https://www.python.org/) the latest Python distribution. Second, download Django. The easiest way is through [pip](https://pip.pypa.io/en/stable/installing/) or pip3 (whichever one is the Python3 version) below. You can read the actual Django docs if you want.
-
-```
-pip install Django
-pip3 install Django
-```
+We strongly recommend that you set up a SSH key that's paired up with Github. Follow this [tutorial](https://help.github.com/articles/connecting-to-github-with-ssh/).
 
 Open up your terminal and `cd` into a folder that you want to clone this tutorial folder in.
 
 ```
 git clone git@github.com:calband/calband-tutorial.git (or use the https link: https://github.com/calband/calband-tutorial.git)
-cd calband-tutorial
-ls
 ```
-
-This should print out `README.md`
 
 Next, we'll create a new branch for you to make changes on.
 
@@ -33,9 +24,36 @@ Next, we'll create a new branch for you to make changes on.
 git checkout -b [enter your name here!!! this is the name of your branch]
 ```
 
+## Virtual Machine Set Up
+
+Finally, we'll set up your Virtual Machine.
+
+1. Install VirtualBox
+2. Install Vagrant
+
+Make sure that your terminal is in the calband-tutorial folder, and run `vagrant up`. This will create the VM and install everything it needs to get running. It is common to run into trouble at this step, particularly for Windows users. Please ask the computer coordinator with help in setting up your computer. You may need to run `vagrant reload` or `vagrant destroy` so you can bring up the VM again.
+
+For the rest of the tutorial, make sure that you're SSH'd into your VM and are using the proper commands.
+
+1. Run `vagrant ssh` to SSH into your VM
+2. Run `cd /vagrant` to get into the mounted folder (the calband-tutorial folder syncs up with this folder on your VM)
+3. When the Django tutorial tells you to use `python`, make sure to use `python3.6`. Example: `python3.6 manage.py runserver`.
+
 ## Your Task
 
-You will complete the ["Writing your first Django app" tutorial](https://docs.djangoproject.com/en/2.0/intro/tutorial01/). Do not worry about "Database setup" in part 2. You will use SQLite for simplicity.
+You will complete the ["Writing your first Django app" tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/). Make sure that the Django version is 1.11! Do not worry about "Database setup" in part 2. Since we use PostgreSQL, after you run the `django-admin startproject mysite` command in the part 1, go into `mysite/settings.py` and change the `DATABASES` variable to the following:
+
+```
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'members_only_db',
+        'USER': 'members_only_user',
+        'PASSWORD': 'calbandgreat',
+        'HOST': '127.0.0.1'
+    },
+}
+```
 
 When you finish, you will make a pull request to show off your progress! In our workflow, we use pull requests to help us review changes made before making a changes to our master branch.
 
@@ -54,7 +72,9 @@ Open up the Github repository. You should see a yellow box with your branch. Sma
 
 [Congratulations!!!](https://youtu.be/1Bix44C1EzY)
 
-Just by completing this tutorial, you've accomplished so much!!! You now have the basic knowledge to contribute to the computer committee! My [--insert your gender identifier--](https://youtu.be/I04OIfbBrTg)!
+Just by completing this tutorial, you've accomplished so much!!! You now have the basic knowledge to contribute to the computer committee! [Yee haw](https://youtu.be/I04OIfbBrTg)!
+
+##
 
 ## Optional tutorials
 
