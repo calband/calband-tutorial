@@ -41,7 +41,19 @@ For the rest of the tutorial, make sure that you're SSH'd into your VM and are u
 
 ## Your Task
 
-You will complete the ["Writing your first Django app" tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/). Make sure that the Django version is 1.11! Do not worry about "Database setup" in part 2. You will use SQLite for simplicity.
+You will complete the ["Writing your first Django app" tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/). Make sure that the Django version is 1.11! Do not worry about "Database setup" in part 2. Since we use PostgreSQL, after you run the `django-admin startproject mysite` command in the part 1, go into `mysite/settings.py` and change the `DATABASES` variable to the following:
+
+```
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'members_only_db',
+        'USER': 'members_only_user',
+        'PASSWORD': 'calbandgreat',
+        'HOST': '127.0.0.1'
+    },
+}
+```
 
 When you finish, you will make a pull request to show off your progress! In our workflow, we use pull requests to help us review changes made before making a changes to our master branch.
 
