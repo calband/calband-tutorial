@@ -10,6 +10,8 @@ In this tutorial, you will learn the basics of how to use Github to collaborate 
 
 ## Git set up
 
+We strongly recommend that you set up a SSH key that's paired up with Github. Follow this [tutorial](https://help.github.com/articles/connecting-to-github-with-ssh/).
+
 Open up your terminal and `cd` into a folder that you want to clone this tutorial folder in.
 
 ```
@@ -39,7 +41,7 @@ For the rest of the tutorial, make sure that you're SSH'd into your VM and are u
 
 ## Your Task
 
-You will complete the ["Writing your first Django app" tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/). Make sure that the version is 1.11! Do not worry about "Database setup" in part 2. You will use SQLite for simplicity.
+You will complete the ["Writing your first Django app" tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/). Make sure that the Django version is 1.11! Do not worry about "Database setup" in part 2. You will use SQLite for simplicity.
 
 When you finish, you will make a pull request to show off your progress! In our workflow, we use pull requests to help us review changes made before making a changes to our master branch.
 
