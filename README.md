@@ -28,7 +28,7 @@ git checkout -b [enter your name here!!! this is the name of your branch]
 
 Finally, we'll set up your Virtual Machine.
 
-1. Install VirtualBox *5*
+1. Install VirtualBox
 2. Install Vagrant
 
 Make sure that your terminal is in the calband-tutorial folder, and run `vagrant up`. This will create the VM and install everything it needs to get running. It is common to run into trouble at this step, particularly for Windows users. Please ask the computer coordinator with help in setting up your computer. You may need to run `vagrant reload` or `vagrant destroy` so you can bring up the VM again.

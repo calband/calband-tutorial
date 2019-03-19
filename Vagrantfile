@@ -8,8 +8,7 @@ Vagrant.configure("2") do |config|
     end
 
     # Cal Band VM
-    config.vm.box = "calband/xenial64v1"
-    config.vm.box_url = "https://s3-us-west-1.amazonaws.com/calband-virtualboxes/xenial64v1.box"
+    config.vm.box = "calband/bionic64"
     
     # Forward a port from the guest to the host, which allows us to access the ports
     # exposed by the VM from our local machine.
