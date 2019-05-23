@@ -57,6 +57,8 @@ DATABASES = {
 
 When you finish, you will make a pull request to show off your progress! In our workflow, we use pull requests to help us review changes made before making a changes to our master branch.
 
+If you are having trouble with getting your mind around setting up Django, look to [this](https://simpleisbetterthancomplex.com/series/2017/09/04/a-complete-beginners-guide-to-django-part-1.html#starting-a-new-project) guide. If you still aren't sure about someething ask the Computer Manager, HACK, or someone on Comp Comm and they'd be glad to help!
+
 ```
 git status
 git add .
