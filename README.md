@@ -1,12 +1,41 @@
-# calband-tutorial: Computer Assistant Onboarding
+# Computer Assistant Onboarding
 
 ## Introduction
 
-Thank you for your interest in joining the Cal Band Computer Committee! During your time as a CA or on HACK, you will help the band function faster and better on Members Only, our Recruit site, or on CalChart! You will learn software engineering skills by collaborating on Github, setting up a developer environment, and designing and testing features that are used by the 240+ members of the Cal Band!
+Thank you for your interest in joining the Cal Band Computer Committee! During your time as a CA or on HACK, you will help the band function faster and better on Members Only, our Recruit site, or on CalChart! You will learn software engineering skills by collaborating on GitHub, setting up a developer environment, and designing and testing features that are used by the 200+ members of the Cal Band!
 
-It is recommended that CAs and HACK have taken or are taking at least CS61B, so this tutorial won't dive deep into basic coding/git commands. You will be diving into a large codebase while learning new technologies. Having previous experience with large projects will be very helpful.
+If you are reading this, you already have a GitHub account and have been added to our organization. Hooray! Next, please join the [Google Drive](https://drive.google.com/drive/folders/1Q_Z76nEyfy-o6hsey9qxUq-1ix5LUQGk?usp=sharing) if you haven't already. This will contain our meeting notes/other CompComm resources for projects. 
 
-In this tutorial, you will learn the basics of how to use Github to collaborate and how to create a [simple Django web application](https://youtu.be/Dma8Cq2i0cc?t=41s).
+You will be diving into a large codebase while learning new technologies. Having previous experience with large projects will be very helpful.
+
+In this tutorial, you will learn the basics of how to use Github to collaborate and how to create a [simple Django web application](https://youtu.be/ZjOUc7rKtPQ).
+
+## Git for Beginners
+Do this step first if you have never used git before!
+### Mac Users
+
+1) Install homebrew by going to your terminal and entering the following: 
+
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+You may be prompted to enter your computer password. To check if brew is working after installation, enter this into your terminal:
+```
+brew doctor
+```
+
+2) Install git by entering this into your terminal: 
+```
+brew install git
+```
+Verify that git is working by entering this:
+```
+git --version
+```
+### Windows Users
+
+Follow the "Installing Git" instructions [here.](https://fa22.datastructur.es/materials/lab/lab01/windows.html#b-install-git)
 
 ## Git set up
 
@@ -21,7 +50,7 @@ git clone git@github.com:calband/calband-tutorial.git (or use the https link: ht
 Next, we'll create a new branch for you to make changes on.
 
 ```
-git checkout -b [enter your name here!!! this is the name of your branch]
+git checkout -b ["enter your name here!!! this is the name of your branch"]
 ```
 
 ## Virtual Machine Set Up
@@ -31,9 +60,10 @@ Finally, we'll set up your Virtual Machine.
 1. Install VirtualBox
 2. Install Vagrant
 
-Make sure that your terminal is in the calband-tutorial folder, and run `vagrant up`. This will create the VM and install everything it needs to get running. It is common to run into trouble at this step, particularly for Windows users. Please ask the computer coordinator with help in setting up your computer. You may need to run `vagrant reload` or `vagrant destroy` so you can bring up the VM again.
+Make sure that your terminal is in the calband-tutorial folder, and run `vagrant up`. This will create the VM and install everything it needs to get running. It is common to run into trouble at this step, particularly for Windows users. Please ask the Computer Coordinators with help in setting up your computer. You may need to run `vagrant reload` or `vagrant destroy` so you can bring up the VM again. 
 
-For the rest of the tutorial, make sure that you're SSH'd into your VM and are using the proper commands.
+For the rest of the tutorial, make sure that you're SSH'd into your VM and are using the proper commands. 
+**If you are having issues, feel free to skip these steps for now and continue to complete the Django tutorial below.**
 
 1. Run `vagrant ssh` to SSH into your VM
 2. Run `cd /vagrant` to get into the mounted folder (the calband-tutorial folder syncs up with this folder on your VM)
@@ -41,7 +71,7 @@ For the rest of the tutorial, make sure that you're SSH'd into your VM and are u
 
 ## Your Task
 
-You will complete the ["Writing your first Django app" tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/). Make sure that the Django version is 1.11! Do not worry about "Database setup" in part 2. Since we use PostgreSQL, after you run the `django-admin startproject mysite` command in the part 1, go into `mysite/settings.py` and change the `DATABASES` variable to the following:
+You will complete the ["Writing your first Django app" tutorial](https://docs.djangoproject.com/en/4.1/intro/tutorial01/). Do not worry about "Database setup" in part 2. Since we use PostgreSQL, after you run the `django-admin startproject mysite` command in part 1, go into `mysite/settings.py` and change the `DATABASES` variable to the following:
 
 ```
 DATABASES = {
@@ -55,10 +85,9 @@ DATABASES = {
 }
 ```
 
-If you are having trouble with getting your mind around setting up Django, look to [this](https://simpleisbetterthancomplex.com/series/2017/09/04/a-complete-beginners-guide-to-django-part-1.html#starting-a-new-project) guide. If you still aren't sure about someething ask the Computer Manager, HACK, or someone on Comp Comm and they'd be glad to help!
+If you are having trouble with getting your mind around setting up Django, look to [this](https://simpleisbetterthancomplex.com/series/2017/09/04/a-complete-beginners-guide-to-django-part-1.html#starting-a-new-project) guide. If you still aren't sure about something ask the Computer Manager, HACK, or someone on Comp Comm and they'd be glad to help!
 
 When you finish, you will make a pull request to show off your progress! In our workflow, we use pull requests to help us review changes made before making a changes to our master branch.
-
 
 ```
 git status
@@ -69,13 +98,13 @@ git push origin [the name of your branch]
 
 This process creates a new branch. It also stores your changes into a commit. Finally, it pushes the commit that is stored on your computer to Github.
 
-Open up the Github repository. You should see a yellow box with your branch. Smash that mf pull request button!!! Submit a pull request!!! You did it!!! WoooOooOOOoOoOOOooOOOOOOOOOO
+Open up the Github repository. You should see a yellow box with your branch. Smash that mf pull request button!!! Submit a pull request!!! You did it!!! WoooOooOOOoOoOOOooOOOOOOOOOO!! You should see that the Computer Coordinators have created pull requests as well!
 
 ## Congratulations
 
 [Congratulations!!!](https://youtu.be/1Bix44C1EzY)
 
-Just by completing this tutorial, you've accomplished so much!!! You now have the basic knowledge to contribute to the computer committee! [Yee haw](https://youtu.be/I04OIfbBrTg)!
+Just by completing this tutorial, you've accomplished so much!!! You now have the basic knowledge to contribute to the Computer Committee! [Yee haw](https://youtu.be/M0Ncawy2LJc)!
 
 ##
 
