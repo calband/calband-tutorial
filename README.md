@@ -39,6 +39,8 @@ Follow the "Installing Git" instructions [here.](https://fa22.datastructur.es/ma
 
 ## Git set up
 
+If you haven't used git before, read [this](https://fa22.datastructur.es/materials/guides/git/) for an overview of how it works. Don't worry if you don't understand everything yet, you'll get plenty of practice on Comp Comm!
+
 We strongly recommend that you set up a SSH key that's paired up with Github. Follow this [tutorial](https://help.github.com/articles/connecting-to-github-with-ssh/).
 
 Open up your terminal and `cd` into a folder that you want to clone this tutorial folder in.
